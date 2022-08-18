@@ -80,6 +80,6 @@ jobs:
       with:
         context: .
         push: true
-        tags: klement55/app:latest
+        tags: klement55/simple-cookie-fortune:latest
 
   
