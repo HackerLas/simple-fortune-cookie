@@ -59,6 +59,7 @@ jobs:
         path: .  
   Dockerhub:
     runs-on: ubuntu-latest
+    needs: Build
     steps:
     - name: Download code
       uses: actions/download-artifact@v2
