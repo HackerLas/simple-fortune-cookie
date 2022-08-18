@@ -1,4 +1,4 @@
-name: Simple-fortune-cookie-CIs
+name: Simple-fortune-cookie-CI
 on: push 
   #push:
    # branches:
