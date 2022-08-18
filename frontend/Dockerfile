@@ -10,5 +10,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -o frontend
 
 FROM alpine:3.11.3
 COPY --from=builder /build/frontend . 
+COPY static static
+COPY templates templates  
 
 ENTRYPOINT [ "./frontend" ]
