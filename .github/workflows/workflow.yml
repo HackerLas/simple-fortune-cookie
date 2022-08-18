@@ -51,7 +51,7 @@ jobs:
         name: code
         path: .
     - name: Run test
-      run: chmod +x frontend/main_test.go && frontend/main_test.go
+      run: cd frontend/ && go test
     - name: Upload Repo
       uses: actions/upload-artifact@v2
       with: 
