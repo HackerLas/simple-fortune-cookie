@@ -1,8 +1,8 @@
-FROM ubuntu:20.04
+FROM golang:1.13.2
 
 RUN apt-get update -y
-RUN apt-get install -y toilet
+RUN apt-get install -y redigo:v1.8.5
 
-ENTRYPOINT ["toilet", "-F", "border", "--gay"]
+RUN go build -o backend
 
-CMD ["hello world"]
+ENTRYPOINT ./backend
