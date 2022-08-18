@@ -35,7 +35,7 @@ jobs:
         name: code
         path: .
     - name: Docker compose
-      run: docker-compose up --build
+      run: docker-compose build
     - name: Upload Repo
       uses: actions/upload-artifact@v2
       with:
