@@ -85,5 +85,7 @@ jobs:
         context: .
         push: true
         tags: klement55/simple-cookie-fortune
+        secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
 
   
