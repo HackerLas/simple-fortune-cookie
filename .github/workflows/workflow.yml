@@ -74,6 +74,6 @@ jobs:
         with:
         context: {{defaultContext}}
           push: true
-          tags: user/app:latest
+          tags: klement55/app:latest
 
   
