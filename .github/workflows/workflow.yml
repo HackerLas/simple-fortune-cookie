@@ -71,7 +71,7 @@ jobs:
           password: dckr_pat_15UgmDE3eBjXAjfAcaREr3f0HNI
       - name: Build and push
         uses: docker/build-push-action@v3
-        context: "{{defaultContext}}:backend"
+        context: "backend"
         with:
           push: true
           tags: user/app:latest
