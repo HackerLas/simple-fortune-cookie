@@ -79,10 +79,17 @@ jobs:
         username: klement55
         password: dckr_pat_15UgmDE3eBjXAjfAcaREr3f0HNI
     - 
-      name: Build and push
+      name: Build and push frontend image
       uses: docker/build-push-action@v3
       with:
         context: frontend
+        push: true
+        tags: klement55/simple-cookie-fortune
+    - 
+      name: Build and push backend image
+      uses: docker/build-push-action@v3
+      with:
+        context: backend
         push: true
         tags: klement55/simple-cookie-fortune
 
