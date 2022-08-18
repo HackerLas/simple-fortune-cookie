@@ -82,10 +82,8 @@ jobs:
       name: Build and push
       uses: docker/build-push-action@v3
       with:
-        context: .
+        context: frontend
         push: true
         tags: klement55/simple-cookie-fortune
-        secrets: |
-            GIT_AUTH_TOKEN=dckr_pat_15UgmDE3eBjXAjfAcaREr3f0HNI
 
   
